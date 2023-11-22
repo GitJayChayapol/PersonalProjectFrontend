@@ -18,11 +18,7 @@ export default function LoginPage() {
       </div>
       <div className=" bg-orange-100 flex flex-1 justify-center items-center">
         <div className="flex flex-col justify-center items-center bg-orange-900 p-10 rounded-md gap-4">
-          <div className="text-white text-4xl">Login</div>
           <LoginForm />
-          <button className="bg-gray-300 p-2 rounded-md font-semibold w-36">
-            Login
-          </button>
         </div>
       </div>
     </div>

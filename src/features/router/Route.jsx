@@ -7,11 +7,18 @@ import Driverpage from "../../page/Driverpage";
 import Homepage from "../../page/Homepage";
 import LoginPage from "../../page/Loginpage";
 import RegisterPage from "../../page/Registerpage";
+import Authenticated from "../auth/Authenticated";
+import RedirectIfauthenticated from "../auth/RedirectIfauthenticated";
+import PreviewPage from "../../page/PreviewPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Layout />,
+    element: (
+      <Authenticated>
+        <Layout />
+      </Authenticated>
+    ),
     children: [
       { path: "", element: <Homepage /> },
       { path: "car", element: <Carpage /> },
@@ -22,11 +29,19 @@ const router = createBrowserRouter([
   },
   {
     path: "/login",
-    element: <LoginPage />,
+    element: (
+      <RedirectIfauthenticated>
+        <LoginPage />,
+      </RedirectIfauthenticated>
+    ),
   },
   {
     path: "/register",
     element: <RegisterPage />,
+  },
+  {
+    path: "/account/:id",
+    element: <PreviewPage />,
   },
 ]);
 

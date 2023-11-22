@@ -20,6 +20,12 @@ dependencies:
   react-router-dom:
     specifier: ^6.16.0
     version: 6.16.0(react-dom@18.2.0)(react@18.2.0)
+  react-toastify:
+    specifier: ^9.1.3
+    version: 9.1.3(react-dom@18.2.0)(react@18.2.0)
+  toastify:
+    specifier: ^2.0.1
+    version: 2.0.1
 
 devDependencies:
   '@types/react':
@@ -944,6 +950,11 @@ packages:
     optionalDependencies:
       fsevents: 2.3.3
     dev: true
+
+  /clsx@1.2.1:
+    resolution: {integrity: sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==}
+    engines: {node: '>=6'}
+    dev: false
 
   /color-convert@1.9.3:
     resolution: {integrity: sha512-QfAUtd+vFdAtFQcC8CCyYt1fYWxSqAiK2cSD6zDB8N3cpsEBAvRxp9zOGg6G/SHHJYAT88/az/IuDGALsNVbGg==}
@@ -2256,6 +2267,17 @@ packages:
       react: 18.2.0
     dev: false
 
+  /react-toastify@9.1.3(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-fPfb8ghtn/XMxw3LkxQBk3IyagNpF/LIKjOBflbexr2AWxAH1MJgvnESwEwBn9liLFXgTKWgBSdZpw9m4OTHTg==}
+    peerDependencies:
+      react: '>=16'
+      react-dom: '>=16'
+    dependencies:
+      clsx: 1.2.1
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: false
+
   /react@18.2.0:
     resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
     engines: {node: '>=0.10.0'}
@@ -2552,6 +2574,10 @@ packages:
     dependencies:
       is-number: 7.0.0
     dev: true
+
+  /toastify@2.0.1:
+    resolution: {integrity: sha512-Me/O93yAlwiHYwqX0su60Wv+X9ngzIT6nBLbNAFED095gMSjCBYKdu+faBxV6SE8CiQjUTBLrz8LwoXMtGz+yw==}
+    dev: false
 
   /ts-interface-checker@0.1.13:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}

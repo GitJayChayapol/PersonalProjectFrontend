@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom";
+import { useAuth } from "../hook/use-auth";
+
 export default function Header() {
+  const { logout } = useAuth();
   return (
     <div>
       <div className="flex justify-between px-4 py-3 bg-orange-900">
@@ -23,7 +26,10 @@ export default function Header() {
             <div className="p-2 text-white cursor-pointer">Account</div>
           </Link>
           <div>
-            <div className="bg-gray-300 p-2 cursor-pointer rounded-md font-bold">
+            <div
+              className="bg-gray-300 p-2 cursor-pointer rounded-md font-bold"
+              onClick={() => logout()}
+            >
               Logout
             </div>
           </div>

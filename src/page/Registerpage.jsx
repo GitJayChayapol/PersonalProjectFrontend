@@ -16,9 +16,6 @@ export default function RegisterPage() {
         <div className="flex flex-col justify-center items-center bg-orange-900 p-10 rounded-md gap-4">
           <div className="text-white text-4xl">REGISTES</div>
           <RegisterForm />
-          <button className="bg-gray-300 p-2 rounded-md font-semibold w-36">
-            Register
-          </button>
         </div>
       </div>
     </div>
