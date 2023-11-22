@@ -7,7 +7,7 @@ export default function AccountItem({ accObj, deleteAcc, getPreview }) {
     id: "",
   });
   const navigete = useNavigate();
-  console.log(accObj);
+
   const handleClickDelete = () => {
     deleteAcc(accObj.id);
   };
@@ -15,7 +15,6 @@ export default function AccountItem({ accObj, deleteAcc, getPreview }) {
     getPreview(input.id);
     navigete(`/account/${input.id}`);
   };
-  console.log(setInput);
 
   return (
     <div className="flex px-20 w-full items-center justify-center">

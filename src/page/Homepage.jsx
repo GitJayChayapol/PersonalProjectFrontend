@@ -72,8 +72,8 @@ export default function Homepage() {
   const searchTodo = async (id) => {
     try {
       await axios.get(`/${id}`).then((res) => {
-        setAllTodo(res.data.searchtodo);
         setPrice(res.data.totalPrice);
+        setAllTodo(res.data.searchtodo);
       });
     } catch (err) {
       console.log(err);

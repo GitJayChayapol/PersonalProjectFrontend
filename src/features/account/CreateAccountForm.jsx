@@ -63,11 +63,10 @@ export default function CreateAccountForm({
           {error.origin && <InputErrorMessage message={error.origin} />}
         </div>
 
-        <div>
+        <div className="invalid:">
           <span>TotalPrice :</span>
           <AccountInput
             value={price[0].totalprice}
-            onChange={handleChangeInput}
             name="totalPrice"
             hasError={error.totalPrice}
           />

@@ -15,7 +15,7 @@ export default function TodoList({
   const handleClickStatus = async () => {
     updateStatus(postObj.id);
   };
-  console.log(postObj);
+
   return (
     <div className="flex px-2 text-xs">
       <div
